@@ -6,7 +6,7 @@ from selenium.webdriver.common.by import By
 link = 'http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/'
 
 
-def test_exists_button_to_basket_for_any_lang(browser):
+def test_exists_button_to_basket_for_any_languages(browser):
     try:
         browser.get(link)
         curr_language = browser.execute_script('return window.navigator.language || window.navigator.userLanguage')
